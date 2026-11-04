@@ -13,7 +13,8 @@ int main() {
     double s, s1, s2, diff;
     char ch;
     do {
-        printf("Меню операций для геометрической фигуры №30:\n");
+        printf("Меню операций для геометрической фигуры
+            :\n");
         printf("1 - Рассчитать площадь фигуры\n");
         printf("2 - Вывести определение фигуры\n");
         printf("3 - Нарисовать фигуру\n");
@@ -45,7 +46,7 @@ int main() {
             else {
                 printf("Введите символ для рисования: ");
                 scanf(" %c", &ch);
-                printf("\nРезультат (Фигура №30):\n");
+                printf("\nРезультат:\n");
                 draw_figure(draw_k, ch);
             }
             break;
@@ -91,7 +92,7 @@ double area_figure(int k) {
     return total_area - cut_area;
 }
 void print_definition(void) {
-    printf("\nФигура №30 — это многоугольник в виде П-образной арки (или портала), \n");
+    printf("\nПредставленная фигура — это многоугольник в виде П-образной арки, \n");
     printf("образованный внешним прямоугольником с вырезанной центральной нижней частью.\n");
 }
 void draw_figure(int k, char ch) {
